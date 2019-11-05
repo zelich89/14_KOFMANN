@@ -1,0 +1,256 @@
+.zel {
+  width: 25px;
+  height: 25px;
+  background-color: darkolivegreen;
+}
+
+/*.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}*/
+
+
+.h-105 {
+  height: 105px;
+}
+
+.h-425 {
+  height: 425px;
+}
+//######################################################################################################################################################
+//######################################################################################################################################################
+//######################################################################################################################################################
+
+.media-breakpoint {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 2px;
+  background-color: Crimson;
+  @include media-breakpoint-up(sm) {
+    background-color: Gold;
+  }
+  @include media-breakpoint-up(md) {
+    background-color: DarkTurquoise;
+  }
+  @include media-breakpoint-up(lg) {
+    background-color: MediumVioletRed;
+  }
+  @include media-breakpoint-up(xl) {
+    background-color: ForestGreen;
+  }
+}
+
+* {
+  outline: none !important;
+}
+
+body {
+  min-width: 330px;
+}
+
+a {
+  color: #e13d3d;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.pos-rel {
+  @extend .position-relative;
+}
+
+.pos-abs {
+  @extend .position-absolute;
+}
+
+.pos-fix {
+  position: fixed;
+}
+
+.my-btn {
+  @extend .btn;
+  border-radius: 50px;
+}
+
+.triangle {
+  width: 14px;
+  height: 10px;
+  border: 6px solid transparent;
+  border-top-color: white;
+  transform: translateY(25%);
+}
+
+.dn {
+  @extend .d-none;
+}
+
+.abs-cent {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-65%);
+}
+
+.elem-descr {
+  height: 72px;
+  overflow: hidden;
+}
+
+.products-pic {
+  @include square-size(100%);
+  object-fit: cover;
+  transition: border-color .2s ease, box-shadow 2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
+.count-view-posit {
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-25%);
+}
+
+.dot {
+  margin: 8px;
+  @include square-size(8px);
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+  &.active {
+    background-color: #000;
+  }
+  @include media-breakpoint-up(xl) {
+    @include square-size(14px);
+  }
+}
+
+.prod-authors {
+  height: 44px;
+}
+
+.head-two, .elem-pic {
+  pointer-events: none;
+}
+
+.input {
+  box-shadow: none;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+.input-text {
+  /*height: $form-height;
+  padding: ($form-height - $form-line-height - ($form-border-width *2))/2 11px;*/
+  width: 100%;
+  height: 36px;
+  padding: 7px 11px;
+}
+
+.input-text-2 {
+  width: 200px;
+  height: 36px;
+  padding: 7px 11px;
+}
+
+.input-theme {
+  //border: $form-border-width solid #999999;
+  border: 1px solid #999999;
+  border-radius: 4px;
+}
+
+.plan-price {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.cards {
+  border-radius: 8px;
+}
+
+.cards-avat {
+  bottom: 0;
+  right: 15%;
+  transform: translateY(50%);
+  &-pic {
+    object-fit: cover;
+    @include square-size(73px)
+  }
+}
+
+.plan {
+  &-picture {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  &-descr {
+    height: 96px;
+  }
+}
+
+
+
+.my-btn {
+  //@extend .px-40;
+}
+
+.footer-up {
+  border-bottom: 1px solid rgb(125, 125, 125);
+}
+
+.footer-block-list{
+  border-top: 1px solid rgb(125, 125, 125);
+  height: 205px;
+}
+
+.up {
+  @include square-size(46px);
+  //cursor: pointer;
+  transition: background-color 2s ease;
+  border: 1px solid rgba(146, 123, 71, .25);
+  &:hover {
+    background-color: $danger !important;
+  }
+  &:focus {
+    background-color: darken($primary, 40%);
+  }
+  &:visited {
+    background-color: darken($primary, 10%);
+  }
+  &-position {
+    bottom: 3%;
+    right: 5%;
+    transform: translateX(-50%);
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////
+
+.checkbox-label {
+  .checkbox {
+    display: none;
+    &:checked ~.custom-checkbox svg{
+      display: block;
+    }
+  }
+  .custom-checkbox svg {
+    display: none;
+  }
+}
+
+.custom-checkbox {
+  margin-right: 10px;
+}
+
+///////////////////////////////////////////////////////////////////////////////////
