@@ -42,3 +42,16 @@
 .checked svg {
   opacity: 0;
 }
+
+.plan-picture-div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background: linear-gradient(180deg, rgba(60, 60, 60, 0.2) 0%, rgba(60, 60, 60, 0.7) 100%);
+  z-index: 0;
+}

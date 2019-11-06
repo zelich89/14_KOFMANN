@@ -11,8 +11,9 @@ $view-icon-md-h: 14px;
 $view-icon-xl-w: 40px;
 $view-icon-xl-h: 22px;
 
-$soc-icon-sm: 17px;
-$soc-icon-xl: 24px;
+$cards-avat-size-sm: 64px;
+$cards-avat-size-md: 80px;
+$cards-avat-size-xl: 128px;
 
 $contact-icon: 17px;
 
@@ -61,3 +62,12 @@ $recent-products-xl: 262px;
 }
 }
 
+.cards-avat-pic {
+  @include square-size($cards-avat-size-sm);
+  @include media-breakpoint-up(md) {
+    @include square-size($cards-avat-size-md);
+  }
+  @include media-breakpoint-up(xl) {
+    @include square-size($cards-avat-size-xl);
+  }
+}

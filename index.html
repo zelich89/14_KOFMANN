@@ -6,20 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:400,700|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAy+v/gMvr/4DL6/8AAAAAAAAAAAAAAAAAAAAAgMvr/4DL6/+Ay+v+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgMvr/4DL6/+Ay+v/AAAAAAAAAAAAAAAAAAAAAIDL6/+Ay+v/gMvr/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDL6/+Ay+v/gMvr/wAAAAAAAAAAAAAAAIDL6/+Ay+v/gMvr/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAy+v/gMvr/4DL6/+Ay+v/gMvr/4DL6/+Ay+v/gMvr/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgMvr/4DL6/+Ay+v/gMvr/4DL6/+Ay+v/gMvr8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDL6/+Ay+v/gMvr/4DL6/+Ay+v/gMvr/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAy+v/gMvr/4DL6/8AAAAAgMvr/4DL6/+Ay+v/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgMvr/4DL6/+Ay+v/AAAAAAAAAACAy+v/gMvr/4DL6/UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDL6/+Ay+v/gMvr/wAAAAAAAAAAAAAAAIDL6/+Ay+v/gMvr7QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAy+v/gMvr/4DL6/8AAAAAAAAAAAAAAAAAAAAAgMvr/4DL6/+Ay+viAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA48cAAOPHAADjjwAA4B8AAOA/AADgfwAA4j8AAOMfAADjjwAA48cAAP//AAD//wAA//8AAA=="
           rel="icon" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!--    <link rel="shortcut icon" href="http://www.iconj.com/ico/y/n/ynyncjso9n.ico" type="image/x-icon" />-->
     <title>KOFMANN</title>
     <svg style="display: none;">
-        <symbol viewBox="0 0 40 41" id="icon-search">
-            <g>
-                <path d="M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066" fill="currentColor" ></path>
+        <symbol viewBox="0 0 29 29" id="icon-search">
+            <g id="search-icon" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 1.414063 11.32739)">
+                <path d="M7.0098 14.0196C10.8812 14.0196 14.0196 10.8812 14.0196 7.0098C14.0196 3.13839 10.8812 0 7.0098 0C3.13839 0 0 3.13839 0 7.0098C0 10.8812 3.13839 14.0196 7.0098 14.0196Z" id="Oval-63" fill="none" stroke="currentColor" stroke-width="2" ></path>
+                <path d="M0.778867 0L0.778867 7.78867" transform="translate(6.230957 14.01956)" id="Path-379" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" ></path>
             </g>
         </symbol>
-
         <symbol viewBox="0 0 68 68" id="icon-prev">
             <g transform="translate(2 2)">
                 <path d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z"
@@ -134,7 +136,7 @@
     <div class="container position-relative">
         <div class="d-n media-breakpoint position-absolute z-index-5"></div>
 
-        <nav class="dn d-lg-flex navbar navbar-expand-lg">
+        <nav class="d-none d-lg-flex navbar navbar-expand-lg">
             <a href="#" class="logo-small">
                 <img src="images/kofmann.png" alt="">
             </a>
@@ -168,23 +170,27 @@
             </div>
         </nav>
 
-        <div class="hole row d-sm-flex justify-content-around">
-            <div class="head-one col-sm-5 pb-15 pb-md-40 pb-xl-100 flex-grow-0">
+        <div class="hole row d-flex justify-content-around">
+            <div class="head-one d-flex flex-column justify-content-center col-10 col-md-6 pb-15 pb-md-40 pb-xl-100 flex-grow-0 border">
                 <div class="head-label caption-2 bold text-white pt-45 pt-md-65 pt-md-85 pb-20 pb-md-65 pb-xl-140">
                     RESPONSIVE UI KIT
                 </div>
                 <div class="big-logo pb-10 pb-xl-30">
-                    <a class="h1 l-spacing-2 bold link-text-primary" href="#">KOFMANN</a>
+                    <h1 class="h1 l-spacing-2 bold link-text-primary">KOFMANN</h1>
                 </div>
                 <div class="tag h4 bold text-white pb-20">We’re Bring It To The New Level</div>
-                <div class="head-text text-white">Every new computer that’s brought home from the store has an operating
+                <div class="head-text text-white pb-25 pb-md-40 pb-xl-100">Every new computer that’s brought home from the store has an operating
                     system installed onto it. But what most new computer users don’t realize, is that without an
                     operating system, that computer would be a simple shell of possibilities.
                 </div>
+                <div class="sm x-center"><img class="d-sm-none col-10 pb-35 flex-shrink-1" src="images/iphoneapp-sm.png" alt=""></div>
+                <div class="head-apps d-flex justify-content-around">
+                    <img src="images/appstore-badge.png" alt="">
+                    <img src="images/google-play-badge.png" alt="">
+                </div>
             </div>
-            <div class="head-two x-center">
-                <img class="d-sm-none pb-35" src="images/iphoneapp-sm.png" alt="">
-                <img class="d-none d-sm-inline-block pt-75 pt-xl-160" src="images/iphoneapp-md.png" alt="">
+            <div class="head-two col-6 d-md-flex justify-content-center mt-75">
+                <img src="images/iphoneapp-md.png" alt="">
             </div>
         </div>
     </div>
@@ -202,7 +208,7 @@
             </div>
         </div>
         <div class="graps-sect row d-flex flex-column flex-sm-row justify-content-around">
-            <div class="sect-elem col-12 col-sm-4 pb-30 pb-sm-0">
+<!--            <div class="sect-elem col-12 col-sm-4 pb-30 pb-sm-0">
                 <div class="elem-pic position-relative">
                     <img class="pb-15 pb-xl-30" src="images/74.png" alt="">
                     <div class="abs-cent position-absolute d-flex align-items-baseline text-darker montserrat">
@@ -240,6 +246,27 @@
                 <div class="elem-descr text-darker ">WordPress, the premier free open-source blogging utility, has gone
                     through several upgrades in its life.
                 </div>
+            </div>-->
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <path class="circle" stroke-dasharray="74.95, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <text x="18" y="20.35" class="percentage">74,9</text>
+                </svg>
+            </div>
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart position-relative">
+                    <path class="circle-bg" d="M18 2.0845  a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <path class="circle" stroke-dasharray="39.75, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <text x="18" y="20.35" class="percentage ">39,75</text>
+                </svg>
+            </div>
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845  a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <path class="circle" stroke-dasharray="81.15, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <text x="18" y="20.35" class="percentage">81,1</text>
+                </svg>
             </div>
         </div>
     </div>
@@ -431,7 +458,7 @@
                         <div class="count ml-5">75352</div>
                     </div>
                 </div>
-                <div class="col-12 elem-title text-darker mb-20 mb-xl-35">
+                <div class="elem-title text-darker mb-20 mb-xl-35">
                     <div class="caption-2 bold">WATCH APPS</div>
                     <div class="text-size-1 italic">by</div>
                     <div class="text-size-1 prod-authors">Glen Snyder, Andrew Goodwin, Lida Morrison</div>
@@ -472,23 +499,42 @@
         <h5 class="d-none d-xl-block col-xl-4 marg-cent user-name h2 mb-20 mb-md-25 mb-xl-50 text-center text-darker bold">What People Say</h5>
 
 
+        <div class="swiper-container mb-50">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://www.placehold.it/11x111" alt=""></div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+
         <div id="carousel-BS-testimonials" class="carousel slide row justify-content-around flex-wrap" data-ride="carousel">
 
 
             <div class="carousel-inner text-center pb-70">
                 <div class="carousel-item row active">
                     <div class="col-10 col-md-5 marg-cent">
-                        <div class="cards bg-darker x-center flex-column text-white pos-rel py-30 px-35 py-xl-40 px-xl-60 flex-grow-0">
-                            <div class="s-mark link-text-light text-light mb-30 mb-xl-45">
+                        <div class="cards bg-primary x-center flex-column text-white pos-rel py-30 px-35 py-xl-40 px-xl-60 flex-grow-0">
+                            <div class="s-mark link-text-darker mb-30 mb-xl-45">
                                 <svg>
                                     <use xlink:href="#icon-mark"></use>
                                 </svg>
                             </div>
-                            <div class="speacg text-white text-size-1 pb-25 pb-xl-45">Attending a trade show can be a very effective method of promoting your company and its products.</div>
-                            <div class="cards-name text-primary bold h4">1-Rachel Moreno</div>
-                            <div class="cards-descr pb-65">Lead Designer in <span class="bold">okodesign.net</span></div>
+                            <div class="speacg text-darker text-size-1 pb-25 pb-xl-45">Attending a trade show can be a very effective method of promoting your company and its products.</div>
+                            <div class="cards-name text-darker bold h4">1-Rachel Moreno</div>
+                            <div class="cards-descr text-darker pb-65">Lead Designer in <span class="bold">okodesign.net</span></div>
                             <div class="cards-avat position-absolute">
-                                <img class="cards-avat-pic rounded-circle border-2 text-warning" src="https://cdn.pixabay.com/photo/2016/08/11/00/46/business-lady-1584654_960_720.jpg" alt="">
+                                <img class="cards-avat-pic rounded-circle border-2 text-darker" src="https://cdn.pixabay.com/photo/2016/08/11/00/46/business-lady-1584654_960_720.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -601,12 +647,14 @@
         <div class="plans-sect row d-flex justify-content-around flex-wrap">
             <div class="plans-t col-6 col-md-3 pb-15 pb-md-0">
                 <div class="cards bg-white pos-rel">
-                    <img class="plan-picture pb-30 pb-md-20" src="images/p_1313921.jpg" alt="">
-                    <div class="plan-price pos-abs bold y-center flex-column">
-                        <div class="price-title caption-3 pt-20 pt-xl-40 text-white">FREEMIUM</div>
-                        <div class="price-content y-center text-white montserrat bold">
-                            <div class="price-symbol h4">$</div>
-                            <div class="price-num price-fonts-size">0</div>
+                    <div class="plan-picture-div position-relative mb-30 mb-md-20">
+                        <img class="plan-picture" src="images/p_1313921.jpg" alt="">
+                        <div class="plan-price pos-abs bold y-center flex-column z-index-1">
+                            <div class="price-title caption-3 pt-20 pt-xl-40 text-white">FREEMIUM</div>
+                            <div class="price-content y-center text-white montserrat bold">
+                                <div class="price-symbol h4">$</div>
+                                <div class="price-num price-fonts-size">0</div>
+                            </div>
                         </div>
                     </div>
                     <div class="plans-content pb-30 px-35 pb-xl-40 px-xl-50 x-center flex-column">
@@ -617,13 +665,15 @@
                 </div>
             </div>
             <div class="plans-t col-6 col-md-3 pb-15 pb-md-0">
-                <div class="cards bg-white">
-                    <img class="plan-picture position-relative pb-30 pb-md-20" src="images/p_2161835.jpg" alt="">
-                    <div class="plan-price pos-abs bold y-center flex-column">
-                        <div class="price-title caption-3 pt-20 pt-xl-40 text-white">START UP</div>
-                        <div class="price-content y-center text-white montserrat bold">
-                            <div class="price-symbol h4">$</div>
-                            <div class="price-num price-fonts-size">9</div>
+                <div class="cards bg-white pos-rel">
+                    <div class="plan-picture-div position-relative mb-30 mb-md-20">
+                        <img class="plan-picture" src="images/p_2161835.jpg" alt="">
+                        <div class="plan-price pos-abs bold y-center flex-column z-index-1">
+                            <div class="price-title caption-3 pt-20 pt-xl-40 text-white">START UP</div>
+                            <div class="price-content y-center text-white montserrat bold">
+                                <div class="price-symbol h4">$</div>
+                                <div class="price-num price-fonts-size">9</div>
+                            </div>
                         </div>
                     </div>
                     <div class="plans-content pb-30 px-35 pb-xl-40 px-xl-50 x-center flex-column">
@@ -634,12 +684,12 @@
                 </div>
             </div>
             <div class="plans-t col-6 col-md-3 pb-15 pb-md-0">
-                <div class="cards bg-white">
-                    <div class="plans-picture-div pos-rel">
-                        <img class="plan-picture pb-30 pb-md-20 pos-rel z-index-1" src="images/p_3759234.jpg" alt="">
-                        <div class="plan-price pos-abs bold y-center flex-column">
-                            <div class="price-title caption-3 pt-20 pt-xl-40 text-white z-index-3">BUSINESS</div>
-                            <div class="price-content y-center text-white montserrat bold z-index-3">
+                <div class="cards bg-white pos-rel">
+                    <div class="plan-picture-div position-relative mb-30 mb-md-20">
+                        <img class="plan-picture" src="images/p_3759234.jpg" alt="">
+                        <div class="plan-price pos-abs bold y-center flex-column z-index-1">
+                            <div class="price-title caption-3 pt-20 pt-xl-40 text-white">BUSINESS</div>
+                            <div class="price-content y-center text-white montserrat bold">
                                 <div class="price-symbol h4">$</div>
                                 <div class="price-num price-fonts-size">29</div>
                             </div>
@@ -653,13 +703,15 @@
                 </div>
             </div>
             <div class="plans-t col-6 col-md-3 pb-15 pb-md-0">
-                <div class="cards bg-white">
-                    <img class="plan-picture pb-30 pb-md-20" src="images/p_415695278.jpg" alt="">
-                    <div class="plan-price pos-abs bold y-center flex-column">
-                        <div class="price-title caption-3 pt-20 pt-xl-40 text-white">ENTERPRISE</div>
-                        <div class="price-content y-center text-white montserrat bold">
-                            <div class="price-symbol h4">$</div>
-                            <div class="price-num price-fonts-size">49</div>
+                <div class="cards bg-white pos-rel">
+                    <div class="plan-picture-div position-relative mb-30 mb-md-20">
+                        <img class="plan-picture" src="images/p_415695278.jpg" alt="">
+                        <div class="plan-price pos-abs bold y-center flex-column z-index-1">
+                            <div class="price-title caption-3 pt-20 pt-xl-40 text-white">ENTERPRISE</div>
+                            <div class="price-content y-center text-white montserrat bold">
+                                <div class="price-symbol h4">$</div>
+                                <div class="price-num price-fonts-size">49</div>
+                            </div>
                         </div>
                     </div>
                     <div class="plans-content pb-30 px-35 pb-xl-40 px-xl-50 x-center flex-column">
@@ -688,7 +740,7 @@
                         <input class="input input-text input-theme input-placeholder bg-white placeholder-color pos-rel z-index-1 text-size-4 mb-15 mb-xl-20 pl-15"
                                id="email" type="text" placeholder="Email*">
                         <textarea class="input input-text input-theme input-placeholder bg-white placeholder-color pos-rel z-index-1 text-size-4 mb-15 mb-xl-20 pl-15"
-                                  id="message" type="text" placeholder="Message"> </textarea>
+                                  id="message" placeholder="Message"> </textarea>
                         <div class="checked-sect y-center text-light z-index-1 mb-10 mb-xl-20">
                             <label class="checkbox-label y-center">
                                 <input type="checkbox" class="checkbox" />
@@ -839,12 +891,26 @@
 </div>
 </a>
 
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            slidesPerColumn: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        })
 
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
 </script>
+
+<script src="js/swiper.min.js"></script>
+
 <script src="js/scroll.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 
