@@ -73,11 +73,6 @@ a {
   position: fixed;
 }
 
-.my-btn {
-  @extend .btn;
-  border-radius: 50px;
-}
-
 .triangle {
   width: 14px;
   height: 10px;
@@ -204,10 +199,6 @@ a {
 
 .forms textarea {
   height: 94px;
-}
-
-.my-btn {
-  //@extend .px-40;
 }
 
 .footer-up {

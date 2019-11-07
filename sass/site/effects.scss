@@ -19,14 +19,6 @@
   }
 }
 
-.plans-t:hover {
-  & .my-btn {
-    transition: all $transition-speed ease;
-    background-color: $primary;
-    border-color: $primary;
-  }
-}
-
 .grad-light-45:after {
   content: '';
   position: absolute;
