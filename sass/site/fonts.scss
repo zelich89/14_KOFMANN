@@ -2,7 +2,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   //font-family: 'Dancing Script', cursive;
   color: greenyellow;
-  @include font(5px, 24px);
+  @include font(16px, 24px);
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {

@@ -4,12 +4,25 @@
   background-color: darkolivegreen;
 }
 
+.dop-s {
+  width: 200px;
+  height: 100%;
+  border-bottom: 1px solid pink;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-75%);
+}
+
+
 /*.dot {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }*/
 
+.w-110 {
+  width: 110px;
+}
 
 .h-105 {
   height: 105px;
