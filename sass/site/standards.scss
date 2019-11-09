@@ -1,0 +1,15 @@
+.my-h2 {
+  white-space: nowrap;
+  font-weight: bold;
+  letter-spacing: 1px;
+  @include font(26px, 40px);
+  padding-bottom: 5px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 10px;
+    @include font(32px, 48px);
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 15px;
+    @include font(32px, 48px);
+  }
+}
