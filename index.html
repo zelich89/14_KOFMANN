@@ -256,7 +256,7 @@
 <!--    3  -->
 
 <section class="what bg-clients position-relative">
-    <div class="container py-45 py-md-50 py-xl-55 text-center x-center flex-column">
+    <div class="container py-45 py-md-50 py-xl-55 text-center">
 
         <h2 class="my-h2 text-white mb-0">What Clients are saying</h2>
         <div class="b-mark text-primary mx-auto my-20 my-xl-30">
@@ -852,16 +852,16 @@
 <!-- Initialize Swiper -->
 <script>
     var swiper1 = new Swiper('.sw1', {
-        speed: 2000,
         initialSlide: 1,
+        speed: 2000,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        autoplay: {
+/*        autoplay: {
             delay: 5000,
             disableOnInteraction: false,
-        }
+        }*/
     });
     var swiper2 = new Swiper('.sw2', {
         slidesPerView: 1,
@@ -885,10 +885,10 @@
                 slidesPerGroup: 2
             }
         },
-/*        autoplay: {
+        autoplay: {
             delay: 5000,
             disableOnInteraction: false,
-        }*/
+        }
     });
 </script>
 
