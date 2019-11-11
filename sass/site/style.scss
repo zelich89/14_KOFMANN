@@ -151,8 +151,8 @@ a {
   padding: 7px 11px;
 }
 
-.input-text-2 {
-  width: 200px;
+.my-input {
+  width: 200px !important;
   height: 36px;
   padding: 7px 11px;
 }
@@ -162,9 +162,9 @@ a {
 }
 
 .textarea-height {
-  height: 90px;
+  height: 90px !important;
   @include media-breakpoint-up(xl){
-    height: 95px;
+    height: 95px !important;
   }
 }
 
@@ -224,7 +224,7 @@ a {
   transition: background-color 2s ease;
   border: 1px solid rgba(146, 123, 71, .25);
   &:hover {
-    background-color: $danger !important;
+    background-color: rgb(217, 157, 38) !important;
   }
   &:focus {
     background-color: darken($primary, 40%);
