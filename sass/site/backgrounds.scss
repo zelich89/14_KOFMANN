@@ -49,3 +49,7 @@ body {
 .bg-transparent {
   background-color: transparent !important;
 }
+
+a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {
+  background-color: darken($primary, 20%) !important;
+}
