@@ -5,8 +5,9 @@
   top: 50%;
   right: 30px;
   transform: translateY(-75%);
+  opacity: 0;
 }
 
 .search:hover ~ .navbar-nav {
-  opacity: 0;
+  opacity: 1;
 }
