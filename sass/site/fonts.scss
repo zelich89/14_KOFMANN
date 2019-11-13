@@ -58,7 +58,7 @@ body {
 }
 
 .h2 {
-  @include font(26px, 40px);
+  @include font(24px, 40px);
   @include media-breakpoint-up(md) {
     @include font(32px, 48px);
   }
@@ -68,7 +68,7 @@ body {
 }
 
 .h3 {
-  @include font(22px, 33px);
+  @include font(20px, 33px);
   @include media-breakpoint-up(md) {
     @include font(32px, 48px);
   }

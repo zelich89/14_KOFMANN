@@ -15,7 +15,8 @@
 
     <!-- Initialize Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <!--    <link rel="shortcut icon" href="http://www.iconj.com/ico/y/n/ynyncjso9n.ico" type="image/x-icon" />-->
+
+    <link rel="stylesheet" href="css/animate.css">
     <title>KOFMANN</title>
     <svg style="display: none;">
         <symbol viewBox="0 0 29 29" id="icon-search">
@@ -135,7 +136,7 @@
 <!--    1  -->
 
 <header class="header bg-title position-relative">
-    <div class="d-n media-breakpoint position-absolute z-index-5"></div>
+    <div class="d-n media-breakpoint position-fixed z-index-5"></div>
     <div class="container position-relative">
 
         <nav class="d-none d-lg-flex navbar navbar-expand-lg">
@@ -145,16 +146,16 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto h4">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Prices</a>
+                        <a class="nav-link menu-hover" href="#">Prices</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Booking</a>
+                        <a class="nav-link menu-hover" href="#">Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link menu-hover" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link menu-hover" href="#">Services</a>
                     </li>
                 </ul>
                 <div class="search pos-rel d-flex justify-content-end">
@@ -187,13 +188,13 @@
                     system installed onto it. But what most new computer users don’t realize, is that without an
                     operating system, that computer would be a simple shell of possibilities.
                 </div>
-                <div class="sm x-center"><img class="d-sm-none col-10 pb-35 flex-shrink-1" src="images/iphoneapp-sm.png" alt=""></div>
+                <div class="sm x-center"><img class="d-md-none col-10 pb-35 flex-shrink-1" src="images/iphoneapp-sm.png" alt=""></div>
                 <div class="head-apps d-flex">
                     <img class="app mr-5 mr-md-15 nr-xl-30" src="images/appstore-badge.png" alt="">
                     <img class="app" src="images/google-play-badge.png" alt="">
                 </div>
             </div>
-            <div class="head-two col-6 d-md-flex justify-content-center mt-75">
+            <div class="head-two col-6 d-none d-md-flex justify-content-center mt-75">
                 <img src="images/iphoneapp-md.png" alt="">
             </div>
         </div>
@@ -212,9 +213,9 @@
                 generate the past year.
             </div>
         </div>
-        <div class="graps-sect row d-flex flex-column flex-sm-row justify-content-around">
-            <div class="single-chart pos-rel">
-                <div class="full-circle">
+        <div class="graps-sect d-sm-flex ">
+            <div class="single-chart marg-cent">
+                <div class="full-circle pos-rel">
                     <svg viewBox="0 0 36 36" class="circular-chart">
                         <circle class="circle-bg" cx="18" cy="18" r="16"></circle>
                         <circle class="circle" stroke-dasharray="74.98, 100" stroke-width="6" cx="18" cy="18" r="15.5"></circle>
@@ -224,9 +225,13 @@
                         <div class="fract-numb h3 bold">,98</div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="progress-title caption-2 bold marg-cent">TOTAL CONVERSION</div>
+                    <div class="progress-descr col-12 col-sm-9 text-size-1 marg-cent">The past few years have seen a dramatic change in the public perception of cosmetic surgery.</div>
+                </div>
             </div>
-            <div class="single-chart pos-rel">
-                <div class="full-circle">
+            <div class="single-chart marg-cent">
+                <div class="full-circle pos-rel">
                     <svg viewBox="0 0 36 36" class="circular-chart position-relative">
                         <circle class="circle-bg" cx="18" cy="18" r="16"></circle>
                         <circle class="circle" stroke-dasharray="39.75, 100" stroke-width="6" cx="18" cy="18" r="15.5"></circle>
@@ -236,9 +241,13 @@
                         <div class="fract-numb h3 bold">,75</div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="progress-title caption-2 bold marg-cent">FREE DOWNOADS</div>
+                    <div class="progress-descr col-12 col-sm-9 text-size-1 marg-cent">Can you imagine what we will be downloading in another twenty years?</div>
+                </div>
             </div>
-            <div class="single-chart pos-rel">
-                <div class="full-circle">
+            <div class="single-chart marg-cent">
+                <div class="full-circle pos-rel">
                     <svg viewBox="0 0 36 36" class="circular-chart">
                         <circle class="circle-bg" cx="18" cy="18" r="16"></circle>
                         <circle class="circle" stroke-dasharray="81.15, 100" stroke-width="6" cx="18" cy="18" r="15.5"></circle>
@@ -247,6 +256,10 @@
                         <div class="whole-numb h2 bold">81</div>
                         <div class="fract-numb h3 bold">,15</div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="progress-title caption-2 bold marg-cent">UNIQUE VISITORS</div>
+                    <div class="progress-descr col-12 col-sm-9 text-size-1 marg-cent">WordPress, the premier free open-source blogging utility, has gone through several upgrades in its life.</div>
                 </div>
             </div>
         </div>
@@ -278,7 +291,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide bg-transparent">
                     <div class="row">
-                        <div class="col-7 y-center flex-column marg-cent">
+                        <div class="col-10 col-md-7 y-center flex-column marg-cent">
                             <p class="text-size-1 text-white mb-20 mb-xl-50">Businesses at present had creatively generated effective
                                 advertising campaigns in the form of audio visual media that includes the television and
                                 radios and the print media that cover the newspaper and campaign materials like the posters,
@@ -296,7 +309,7 @@
                 </div>
                 <div class="swiper-slide bg-transparent">
                     <div class="row">
-                        <div class="col-7 y-center flex-column marg-cent">
+                        <div class="col-10 col-md-7 y-center flex-column marg-cent">
                             <p class="text-size-1 text-white mb-20 mb-xl-50">Businesses at present had creatively generated effective
                                 advertising campaigns in the form of audio visual media that includes the television and
                                 radios and the print media that cover the newspaper and campaign materials like the posters,
@@ -314,7 +327,7 @@
                 </div>
                 <div class="swiper-slide bg-transparent">
                     <div class="row">
-                        <div class="col-7 y-center flex-column marg-cent">
+                        <div class="col-10 col-md-7 y-center flex-column marg-cent">
                             <p class="text-size-1 text-white mb-20 mb-xl-50">Businesses at present had creatively generated effective
                                 advertising campaigns in the form of audio visual media that includes the television and
                                 radios and the print media that cover the newspaper and campaign materials like the posters,
@@ -353,8 +366,8 @@
             twenty years, there have been a lot of changes in the toner cartridge market. The market today is
             approximately a twenty billion dollar business.
         </div>
-        <div class="products-sect row d-md-flex d-flex flex-column flex-sm-row flex-sm-nowrap justify-content-around">
-            <div class="products-elem col-12 col-sm-4 pb-30 pb-sm-0 y-center flex-column">
+        <div class="products-sect row d-md-flex d-flex flex-column flex-sm-row flex-md-nowrap justify-content-around">
+            <div class="products-elem col-12 col-md-4 pb-30 pb-sm-0 y-center flex-column">
                 <a href="#">
                     <div class="recent-products recent-products-size position-relative mb-10 mb-md-15 mb-xl-30">
                         <img class="products-pic rounded-circle border-4 text-light" src="images/1214385.jpg" alt="">
@@ -378,7 +391,7 @@
                 </div>
                 <a class="link-text-darker" href="#"><div class="elem-btn my-btn bg-lighter border-2 caption-3 px-30 px-xl-60">REVIEW</div></a>
             </div>
-            <div class="products-elem col-12 col-sm-4 pb-30 pb-sm-0 y-center flex-column">
+            <div class="products-elem col-12 col-md-4 pb-30 pb-sm-0 y-center flex-column">
                 <a href="#">
                     <div class="recent-products recent-products-size position-relative mb-10 mb-md-15 mb-xl-30">
                         <img class="products-pic rounded-circle border-4 text-light" src="images/1414385.jpg" alt="">
@@ -402,7 +415,7 @@
                 </div>
                 <a class="link-text-darker" href="#"><div class="elem-btn my-btn bg-lighter border-2 caption-3 px-30 px-xl-60">REVIEW</div></a>
             </div>
-            <div class="products-elem col-12 col-sm-4 pb-30 pb-sm-0 y-center flex-column">
+            <div class="products-elem col-12 col-md-4 pb-30 pb-sm-0 y-center flex-column">
                 <a href="#">
                     <div class="recent-products recent-products-size position-relative mb-10 mb-md-15 mb-xl-30">
                         <img class="products-pic rounded-circle border-4 text-light" src="images/23214432.png" alt="">
@@ -426,7 +439,7 @@
                 </div>
                 <a class="link-text-darker" href="#"><div class="elem-btn my-btn bg-lighter border-2 caption-3 px-30 px-xl-60">REVIEW</div></a>
             </div>
-            <div class="products-elem col-12 col-sm-4 pb-30 pb-sm-0 y-center flex-column">
+            <div class="products-elem col-12 col-md-4 pb-30 pb-sm-0 y-center flex-column">
                 <a href="#">
                     <div class="recent-products recent-products-size position-relative mb-10 mb-md-15 mb-xl-30">
                         <img class="products-pic rounded-circle border-4 text-light" src="images/ba347fcc9a79fb74e95670b24848164f.jpg" alt="">
@@ -595,13 +608,21 @@
     </div>
 </section>
 
+<!--  Доп  -->
+<div class="container xy-center h-425">
+    <div class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="1s">
+        <div class=" my-wow xy-center text-center">
+            Content to Reveal Here
+        </div>
+    </div>
+</div>
 <!--    7  -->
 
 <section class="plans bg-lighter position-relative">
     <div class="container py-45 py-md-50 py-xl-55 text-center">
         <h5 class="my-h2 mb-0">Subscribing Plans</h5>
         <div class="plans-sect row d-flex justify-content-around flex-wrap">
-            <div class="plans-t col-6 col-md-3 pb-15 pb-md-0">
+            <div class="plans-t col-11 col-sm-6 col-md-3 pb-15 pb-md-0">
                 <div class="cards bg-white pos-rel">
                     <div class="plan-picture-div position-relative mb-30 mb-md-20">
                         <img class="plan-picture" src="images/p_1313921.jpg" alt="">
@@ -620,7 +641,7 @@
                     </div>
                 </div>
             </div>
-            <div class="plans-t col-6 col-md-3 pb-15 pb-md-0">
+            <div class="plans-t col-11 col-sm-6 col-md-3 pb-15 pb-md-0">
                 <div class="cards bg-white pos-rel">
                     <div class="plan-picture-div position-relative mb-30 mb-md-20">
                         <img class="plan-picture" src="images/p_2161835.jpg" alt="">
@@ -639,7 +660,7 @@
                     </div>
                 </div>
             </div>
-            <div class="plans-t col-6 col-md-3 pb-15 pb-md-0">
+            <div class="plans-t col-11 col-sm-6 col-md-3 pb-15 pb-md-0">
                 <div class="cards bg-white pos-rel">
                     <div class="plan-picture-div position-relative mb-30 mb-md-20">
                         <img class="plan-picture" src="images/p_3759234.jpg" alt="">
@@ -658,7 +679,7 @@
                     </div>
                 </div>
             </div>
-            <div class="plans-t col-6 col-md-3 pb-15 pb-md-0">
+            <div class="plans-t col-11 col-sm-6 col-md-3 pb-15 pb-md-0">
                 <div class="cards bg-white pos-rel">
                     <div class="plan-picture-div position-relative mb-30 mb-md-20">
                         <img class="plan-picture" src="images/p_415695278.jpg" alt="">
@@ -688,7 +709,7 @@
 
         <div class="my-h2 text-white mb-0">Get in Touch</div>
         <div class="get-in-sect row justify-content-around pb-xl-50">
-            <div class="col-12 col-md-4">
+            <div class="col-11 col-md-4">
                 <div class="cards bg-dark grad-light-45 pos-rel mx-auto px-20 py-25 px-md-30 px-xl-50 py-xl-35">
                     <form class="form pos-rel z-index-1 " method="post" action="#" id="get-in">
                         <input class="input input-form input-border"
@@ -712,26 +733,30 @@
                 </div>
             </div>
         </div>
-        <div class="d-md-flex justify-content-center pt-45 pt-md-0 pr-xl-25" >
-            <div class="address y-center text-white text-nowrap mr-md-45">
-                <svg width="20" height="20">
-                    <use xlink:href="#icon-location"></use>
-                </svg>
-                <div class="text-size-1 text-white pl-10">2300 W Arbutus Dr Citrus Springs, FL 34434, USA</div>
-            </div>
-            <div class="mail y-center text-white text-nowrap mr-md-45">
-                <svg width="18" height="11">
-                    <use xlink:href="#icon-mail"></use>
-                </svg>
-                <div class="text-size-1 pl-10"><a href="mailto:contact@hofmannui.net" class="link-text-white">contact@hofmannui.net</a>
-                </div>
-            </div>
-            <div class="phone y-center text-white text-nowrap">
-                <svg width="18" height="20">
-                    <use xlink:href="#icon-phone"></use>
-                </svg>
-                <div class="text-size-1 pl-10">
-                    <div class="tel"><a href="tel:952-775-6021" class="link-text-white">952-775-6021</a></div>
+        <div class="row">
+            <div class="col-10">
+                <div class="d-md-flex justify-content-center pt-45 pt-md-0 pr-xl-25" >
+                    <div class="address y-center text-white text-nowrap mr-md-45">
+                        <svg width="20" height="20">
+                            <use xlink:href="#icon-location"></use>
+                        </svg>
+                        <div class="text-size-1 text-white text-truncate pl-10">2300 W Arbutus Dr Citrus Springs, FL 34434, USA</div>
+                    </div>
+                    <div class="mail y-center text-white text-nowrap mr-md-45">
+                        <svg width="18" height="11">
+                            <use xlink:href="#icon-mail"></use>
+                        </svg>
+                        <div class="text-size-1 pl-10"><a href="mailto:contact@hofmannui.net" class="link-text-white">contact@hofmannui.net</a>
+                        </div>
+                    </div>
+                    <div class="phone y-center text-white text-nowrap">
+                        <svg width="18" height="20">
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>
+                        <div class="text-size-1 pl-10">
+                            <div class="tel"><a href="tel:952-775-6021" class="link-text-white">952-775-6021</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -890,6 +915,11 @@
             disableOnInteraction: false,
         }
     });
+</script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
 </script>
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

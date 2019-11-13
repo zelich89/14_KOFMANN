@@ -26,24 +26,39 @@
 //######################################################################################################################################################
 
 .media-breakpoint {
-  top: 0;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 25px;
-  height: 25px;
-  border-radius: 2px;
-  background-color: Crimson;
+  &:after {
+    content: "xs";
+    font-weight: bold;
+    color: Crimson;
+    font-size: 48px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  }
   @include media-breakpoint-up(sm) {
-    background-color: Gold;
+    &:after {
+      content: "sm";
+      color: Gold;
+    }
   }
   @include media-breakpoint-up(md) {
-    background-color: DarkTurquoise;
+    &:after {
+      content: "md";
+      color: DarkTurquoise;
+    }
   }
   @include media-breakpoint-up(lg) {
-    background-color: MediumVioletRed;
+    &:after {
+      content: "lg";
+      color: MediumVioletRed;
+    }
   }
   @include media-breakpoint-up(xl) {
-    background-color: ForestGreen;
+    &:after {
+      content: "xl";
+      color: ForestGreen;
+    }
   }
 }
 
@@ -259,3 +274,19 @@ a {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
+
+.my-wow {
+  width: 100px;
+  height: 100px;
+  background-color: limegreen;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 1s ease ;
+  &:hover {
+    background-color: #000;
+    animation: shake 1s ease;
+  };
+}
