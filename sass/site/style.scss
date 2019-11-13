@@ -275,18 +275,17 @@ a {
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-.my-wow {
+
+.my-for-wow {
   width: 100px;
   height: 100px;
   background-color: limegreen;
   margin: 0 auto;
   display: flex;
-  border-radius: 5px;
+  border-radius: 25%;
   color: white;
   cursor: pointer;
-  transition: background-color 1s ease ;
-  &:hover {
-    background-color: #000;
-    animation: shake 1s ease;
-  };
+/*  &:hover {
+    animation: shake 2s ease;
+  };*/
 }
