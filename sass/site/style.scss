@@ -187,6 +187,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  pointer-events: none;
 }
 
 .cards {
@@ -286,7 +287,4 @@ a {
   border-radius: 25%;
   color: white;
   cursor: pointer;
-/*  &:hover {
-    animation: shake 2s ease;
-  };*/
 }

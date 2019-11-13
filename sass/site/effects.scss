@@ -38,6 +38,7 @@
 .plan-picture {
   &:hover {
     transform: scale(1.1);
+    transition: transform 1s ease;
   }
   &-div:after {
     content: "";
