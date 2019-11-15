@@ -303,5 +303,9 @@ a {
     width: 16px;
     background: #fff;
     margin: 4px auto;
+    @include media-breakpoint-up(md) {
+      height: 3px;
+      width: 24px;
+    }
   }
 }
