@@ -4,8 +4,10 @@
 }
 
 .single-chart {
-  width: 33%;
   justify-content: space-around ;
+  @include media-breakpoint-up(sm) {
+    width: 33%;
+  }
 }
 
 .circular-chart {
