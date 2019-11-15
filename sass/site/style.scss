@@ -291,3 +291,20 @@ a {
   color: white;
   cursor: pointer;
 }
+
+.burger {
+  &-container {
+    display: inline-block;
+    background-color: #fff;
+  }
+  &-bar {
+    display: block;
+    height: 2px;
+    width: 16px;
+    background: #fff;
+    margin: 4px auto;
+  }
+  &-half {
+    transform: translateX(25%) scaleX(.5);
+  }
+}

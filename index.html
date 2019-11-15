@@ -135,14 +135,19 @@
 <!--    1  -->
 
 <header class="header bg-title position-relative">
-<!--    <div class="d-n media-breakpoint position-fixed z-index-5"></div>-->
+    <div class="d-n media-breakpoint position-fixed z-index-5"></div>
     <div class="container position-relative">
 
-        <nav class="d-none d-lg-flex navbar navbar-expand-lg">
+        <nav class="d-flex navbar navbar-expand-lg border">
             <a href="#" class="logo-small">
                 <img src="images/kofmann.png" alt="">
             </a>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <div class="burger d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+                <div class="burger-bar burger-half"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto h4">
                     <li class="nav-item active">
                         <a class="nav-link menu-hover pr-40" href="#">Prices</a>
@@ -157,7 +162,7 @@
                         <a class="nav-link menu-hover pr-40" href="#">Services</a>
                     </li>
                 </ul>
-                <div class="search pos-rel d-flex justify-content-end ml-30 mr-20">
+                <div class="search d-flex pos-rel justify-content-end ml-30 mr-20">
                     <a href="#" class="text-white">
                         <svg>
                             <use xlink:href="#icon-search"></use>
@@ -166,7 +171,7 @@
                         </div>
                     </a>
                 </div>
-                <button class="d-none d-lg-flex align-items-center my-btn border-inherit caption-2 link-text-white r"
+                <button class="my-btn d-none d-lg-flex align-items-center border-inherit caption-2 link-text-white r"
                         type="submit">
                     US
                     <span class="triangle mx-10"></span>
